@@ -1,7 +1,9 @@
 # X-Codec
 
-# Paper Title
+# Paper
 Codec Does Matter: Exploring the Semantic Shortcoming of Codec for Audio Language Model
+
+**Authors**: Zhen Ye, Peiwen Sun, Jiahe Lei, Hongzhan Lin, Xu Tan, Zheqi Dai, Qiuqiang Kong, Jianyi Chen, Jiahao Pan, Qifeng Liu, Yike Guo*, Wei Xue*
 
 <img src="fig1.png" alt="Overview" width="600"/>
 

@@ -5,6 +5,9 @@ Codec Does Matter: Exploring the Semantic Shortcoming of Codec for Audio Languag
 
 <img src="fig1.png" alt="Overview" width="600"/>
 
+# Experiments on VALL-E
+<img src="exp.png" alt="Exp" width="600"/>
+
 # ckpts
 
 Speech ckpts [downlaod link](https://drive.google.com/file/d/11TqMx7LFvSp-x74B894cd7hWy82DfZmW/view?usp=drive_link)

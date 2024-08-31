@@ -22,4 +22,4 @@ torchrun --nnodes=1 --nproc-per-node=8 main_launch_vqdp.py
 ```
 
 ## Acknowledgement
-I would like to extend a special thanks to authors of Uniaudio and DAC, since our code base is mainly borrowed from  [Uniaudio](https://github.com/yangdongchao/UniAudio/tree/main/codec) and [DAC] (https://github.com/descriptinc/descript-audio-codec).
+I would like to extend a special thanks to authors of Uniaudio and DAC, since our code base is mainly borrowed from  [Uniaudio](https://github.com/yangdongchao/UniAudio/tree/main/codec) and [DAC](https://github.com/descriptinc/descript-audio-codec).

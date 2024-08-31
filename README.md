@@ -14,3 +14,12 @@ General audio ckpts [Soon]
 
 # inference
 
+```bash
+python inference.py
+```
+
+# Training
+```bash
+torchrun --nnodes=1 --nproc-per-node=8 main_launch_vqdp.py
+```
+

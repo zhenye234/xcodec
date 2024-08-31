@@ -10,7 +10,7 @@ Codec Does Matter: Exploring the Semantic Shortcoming of Codec for Audio Languag
 
 # ckpts
 
-Speech ckpts [downlaod link](https://drive.google.com/file/d/11TqMx7LFvSp-x74B894cd7hWy82DfZmW/view?usp=drive_link)
+Speech ckpts [downlaod link](https://drive.google.com/file/d/1oF1_R0Z2JNnqdPbuqiL8tJeY6pDwuQG1/view?usp=sharing)
  
 General audio ckpts [Soon]
 

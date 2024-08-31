@@ -3,6 +3,7 @@
 # Paper Title
 Codec Does Matter: Exploring the Semantic Shortcoming of Codec for Audio Language Model
 
+<img src="fig1.png" alt="Overview" width="600"/>
 
 # ckpts
 

@@ -2,7 +2,7 @@
 
 from typing import Sequence, Optional, Union
 import sys
-sys.path.append('/aifs4su/data/zheny/fairseq/vae_v2/codec')
+
 import math
 import random
 

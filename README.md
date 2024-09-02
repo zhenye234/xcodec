@@ -39,6 +39,8 @@ General audio ckpts [Soon] -->
 
 # Inference
 
+Download the model and config from hugging face.
+
 ```bash
 python inference.py
 ```

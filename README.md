@@ -1,6 +1,12 @@
+
+[![arXiv](https://img.shields.io/badge/arXiv-2408.17175-brightgreen.svg?style=flat-square)](https://arxiv.org/pdf/2408.17175)  
 # X-Codec
 
-# Paper
+Unified  Semantic and Acoustic Codec  for Audio Language Model.
+
+# Paper 
+ 
+
 **Title**: Codec Does Matter: Exploring the Semantic Shortcoming of Codec for Audio Language Model
 
 **Authors**: Zhen Ye, Peiwen Sun, Jiahe Lei, Hongzhan Lin, Xu Tan, Zheqi Dai, Qiuqiang Kong, Jianyi Chen, Jiahao Pan, Qifeng Liu, Yike Guo*, Wei Xue*

@@ -38,3 +38,11 @@ I would like to extend a special thanks to authors of Uniaudio and DAC, since ou
 
 ## Citation
 If you find this repo helpful, please consider citing in the following format:
+```bibtex
+@article{ye2024codecdoesmatterexploring,
+      title={Codec Does Matter: Exploring the Semantic Shortcoming of Codec for Audio Language Model}, 
+      author={Zhen Ye and Peiwen Sun and Jiahe Lei and Hongzhan Lin and Xu Tan and Zheqi Dai and Qiuqiang Kong and Jianyi Chen and Jiahao Pan and Qifeng Liu and Yike Guo and Wei Xue},
+      journal={arXiv preprint arXiv:2408.17175},
+      year={2024},
+}
+```

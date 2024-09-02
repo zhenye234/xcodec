@@ -39,7 +39,7 @@ General audio ckpts [Soon] -->
 
 # Inference
 
-To run inference, first Download the model and config from hugging face.
+To run inference, first download the model and config from hugging face.
 
 ```bash
 python inference.py

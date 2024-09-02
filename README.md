@@ -31,7 +31,7 @@ General audio ckpts [Soon] -->
 | xcodec_wavlm_mls (not mentioned in paper)   | [🤗](https://huggingface.co/ZhenYe234/xcodec/blob/main/xcodec_speech_wavlm_mls.pth)                     | [🤗](https://huggingface.co/ZhenYe234/xcodec/blob/main/config_wavlm.yaml)                                 | [🤗 Wavlm-base-plus](https://huggingface.co/microsoft/wavlm-base-plus)                | Speech        | MLS English                   |
 | xcodec_wavlm_more_data (not mentioned in paper) | [🤗](https://huggingface.co/ZhenYe234/xcodec/blob/main/xcodec_speech_wavlm_more_data.pth)               | [🤗](https://huggingface.co/ZhenYe234/xcodec/blob/main/config_wavlm.yaml)                                 | [🤗 Wavlm-base-plus](https://huggingface.co/microsoft/wavlm-base-plus)                | Speech        | MLS English + Internal data   |
 | xcodec_hubert_general_audio                 | [🤗](https://huggingface.co/ZhenYe234/xcodec/blob/main/xcodec_general.pth)                              | [🤗](https://huggingface.co/ZhenYe234/xcodec/blob/main/config_hubert%20_general.yaml)                     | [🤗Hubert-base-general-audio](https://huggingface.co/ZhenYe234/hubert_base_general_audio)      | General audio | 200k hours internal data      |
-| xcodec_hubert_general_audio_more_data (not mentioned in paper) | Coming Soon | [🤗](https://huggingface.co/ZhenYe234/xcodec/blob/main/config_hubert%20_general.yaml) | [🤗](https://huggingface.co/ZhenYe234/hubert_base_general_audio) | General audio | More balanced data            |
+| xcodec_hubert_general_audio_more_data (not mentioned in paper) | Coming Soon | [🤗](https://huggingface.co/ZhenYe234/xcodec/blob/main/config_hubert%20_general.yaml) | [🤗Hubert-base-general-audio](https://huggingface.co/ZhenYe234/hubert_base_general_audio) | General audio | More balanced data            |
 
 
 
@@ -39,13 +39,21 @@ General audio ckpts [Soon] -->
 
 # Inference
 
-Download the model and config from hugging face.
+To run inference, first Download the model and config from hugging face.
 
 ```bash
 python inference.py
 ```
 
 # Training
+Prepare  the training_file and validation_file in config. The file should list the paths to your audio files:
+```bash
+/path/to/your/xxx.wav
+/path/to/your/yyy.wav
+...
+```
+Then:
+
 ```bash
 torchrun --nnodes=1 --nproc-per-node=8 main_launch_vqdp.py
 ```

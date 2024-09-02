@@ -14,7 +14,7 @@ Unified  Semantic and Acoustic Codec  for Audio Language Model.
 <img src="fig1.png" alt="Overview" width="600"/>
 
 # Experiments on VALL-E
-<img src="exp.png" alt="Exp" width="600"/>
+<img src="exp.png" alt="Exp" width="900"/>
 
 # ckpts
 
@@ -35,3 +35,6 @@ torchrun --nnodes=1 --nproc-per-node=8 main_launch_vqdp.py
 
 ## Acknowledgement
 I would like to extend a special thanks to authors of Uniaudio and DAC, since our code base is mainly borrowed from  [Uniaudio](https://github.com/yangdongchao/UniAudio/tree/main/codec) and [DAC](https://github.com/descriptinc/descript-audio-codec).
+
+## Citation
+If you find this repo helpful, please consider citing in the following format:

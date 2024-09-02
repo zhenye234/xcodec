@@ -16,11 +16,11 @@ Unified  Semantic and Acoustic Codec  for Audio Language Model.
 # Experiments on VALL-E
 <img src="exp.png" alt="Exp" width="900"/>
 
-# ckpts
+<!-- # ckpts -->
 
-Speech ckpts [downlaod link](https://drive.google.com/file/d/1oF1_R0Z2JNnqdPbuqiL8tJeY6pDwuQG1/view?usp=sharing)
+<!-- Speech ckpts [downlaod link](https://drive.google.com/file/d/1oF1_R0Z2JNnqdPbuqiL8tJeY6pDwuQG1/view?usp=sharing)
  
-General audio ckpts [Soon]
+General audio ckpts [Soon] -->
 
 ## Available models
 🤗 links to the Huggingface model hub.

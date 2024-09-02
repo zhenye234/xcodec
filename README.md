@@ -22,7 +22,57 @@ Unified  Semantic and Acoustic Codec  for Audio Language Model.
  
 General audio ckpts [Soon] -->
 
-## Available models
+# Highlight
+# Highlight
+You can easily use our idea to modify any current acoustic codec:
+
+For example
+
+```python
+class Codec():
+    def __init__(self):
+        # Acoustic codec components
+        self.encoder = Encoder(...)       # Acoustic encoder
+        self.decoder = Decoder(...)       # Acoustic decoder
+        self.quantizer = RVQ(...)         # Residual Vector Quantizer (RVQ)
+
+        # Adding the semantic module
+        self.semantic_model = AutoModel.from_pretrained(...)  # e.g., Hubert, WavLM
+
+        # Adding Projector
+        self.fc_prior = nn.Linear(...)     
+        self.fc_post1 = nn.Linear(...)     
+        self.fc_post2 = nn.Linear(...)     
+
+    def forward(self, x, bw):
+        # Encode the input acoustically and semantically
+        e_acoustic = self.encoder(x)
+        e_semantic = self.semantic_model(x)
+
+        # Combine acoustic and semantic features
+        combined_features = torch.cat([e_acoustic, e_semantic])
+
+        # Apply prior transformation
+        transformed_features = self.fc_prior(combined_features)
+
+        # Quantize the unified  semantic and acoustic features
+        quantized, codes, bandwidth, commit_loss = self.quantizer(transformed_features, bw)
+
+        # Post-process the quantized features
+        quantized_semantic = self.fc_post1(quantized)
+        quantized_acoustic = self.fc_post2(quantized)
+
+        # Decode the quantized acoustic features
+        output = self.decoder(quantized_acoustic)
+
+
+
+    def semantic_loss(self,semantic,quantized_semantic):
+        return F.mse_loss(semantic,quantized_semantic)     
+```
+More detail can refer to our code.
+
+# Available models
 🤗 links to the Huggingface model hub.
 
 | Model name                                  | Hugging Face                                                                                           | Config                                                                                                   | Semantic Model                                                        | Domain        | Training Data                 |

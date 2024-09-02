@@ -23,8 +23,8 @@ Unified  Semantic and Acoustic Codec  for Audio Language Model.
 General audio ckpts [Soon] -->
 
 # Highlight
-# Highlight
-You can easily use our idea to modify any current acoustic codec:
+
+You can easily apply our approach to enhance any existing acoustic codec:
 
 For example
 
@@ -70,7 +70,7 @@ class Codec():
     def semantic_loss(self,semantic,quantized_semantic):
         return F.mse_loss(semantic,quantized_semantic)     
 ```
-More detail can refer to our code.
+For more details, please refer to our code.
 
 # Available models
 🤗 links to the Huggingface model hub.
